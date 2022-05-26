@@ -1,0 +1,164 @@
+.your-brand {
+
+}
+
+.your-brand__list {
+   @include list-unstyled;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.your-brand__item {
+   max-width: 759px;
+   padding: 158px 110px 157px 165px;
+}
+
+.your-brand__item-title {
+   max-width: 445px;
+   margin: 0;
+   margin-bottom: 32px;
+   font-family: $font-stack;
+   font-weight: 900;
+   font-size: 40px;
+   line-height: 49px;
+   letter-spacing: -0.285714px;
+   color: $color-blue-black;
+}
+
+.your-brand__desc {
+   margin: 0;
+   margin-bottom: 40px;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 30px;
+   letter-spacing: -0.128571px;
+   color: $color-stand-out;
+}
+
+.your-brand__item-img{
+   display: block;
+}
+
+.your-brand__item-link {
+   position: relative;
+   z-index: 1;
+   display: inline-block;
+   text-decoration: none;
+   font-family: $font-stack;
+   font-weight: 900;
+   font-size: 15px;
+   line-height: 25px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   color: $color-blue-black;
+   &::after{
+      position: absolute;
+      z-index: 1;
+      top: 15px;
+      left: -10px;
+      width: 137px;
+      height: 10px;
+      opacity: 0.2;
+      background-color: $color-yellow;
+      border-radius: 28px;
+      content: '';
+   }
+
+   &:hover::after{
+      opacity: 1;
+   }
+}
+
+.your-brand__item-links {
+   position: relative;
+   z-index: 1;
+   display: inline-block;
+   text-decoration: none;
+   font-family: $font-stack;
+   font-weight: 900;
+   font-size: 15px;
+   line-height: 25px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   color: $color-blue-black;
+   &::after{
+      position: absolute;
+      z-index: 1;
+      top: 15px;
+      left: -10px;
+      width: 137px;
+      height: 10px;
+      opacity: 0.2;
+      background-color: $color-pink;
+      border-radius: 28px;
+      content: '';
+   }
+
+   &:hover::after{
+      opacity: 1;
+   }
+}
+
+.your-brand__lists {
+   @include list-unstyled;
+   display: flex;
+   align-items: center;
+}
+
+.your-brand__items {
+   width: 759px;
+   padding-top: 398px;
+   padding-bottom: 59px;
+   padding-left: 191px;
+   padding-right: 190px;
+   background-image: url(../../img/cherry.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.your-brand__items--bg{
+   background-image: url(../../img/orange.jpg);
+}
+
+.your-brand__item-titles {
+   margin: 0;
+   margin-bottom: 27px;
+   font-family: $font-stack;
+   font-weight: 900;
+   font-size: 28px;
+   line-height: 35px;
+   text-align: center;
+   letter-spacing: -0.2px;
+   color: $color-horn-green;
+}
+
+.your-brand__item-titles--blue{
+   color: $color-artist-blue;
+}
+
+.your-brand__descs {
+   max-width: 339px;
+   margin: 0;
+   margin-left: auto;
+   margin-right: auto;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 27px;
+   text-align: center;
+   letter-spacing: -0.114286px;
+   color: $color-moray-green;
+}
+
+.your-brand__descs--blue{
+   color: $color-corsair;
+}
+
+@include breakpoint-down(520px){
+   .your-brand__lists{
+      flex-direction: column;
+   }
+
+   .your-brand__items{
+      width: 520px;
+   }
+}
