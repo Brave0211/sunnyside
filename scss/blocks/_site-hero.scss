@@ -1,0 +1,45 @@
+.site-hero {
+   padding-top: 71px;
+   padding-bottom: 340px;
+   background-image: url(../../img/hero-limon.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 0 -160px;
+}
+
+.site-hero__title {
+   margin: 0;
+   font-family: $font-stack;
+   font-weight: 900;
+   font-size: 56px;
+   line-height: 69px;
+   text-align: center;
+   letter-spacing: 8.75px;
+   text-transform: uppercase;
+   color: $color-white;
+   &::after{
+      width: 30px;
+      height: 107px;
+      display: block;
+      margin-top: 97px;
+      margin-left: auto;
+      margin-right: auto;
+      content: url(../../img/line.png);
+   }
+}
+
+@include breakpoint-down(520px){
+   .site-hero{
+      padding-top: 88px;
+      padding-bottom: 146px;
+      background-image: url(../../img/mobile-bg.jpg);
+      background-repeat: no-repeat; 
+      background-size: cover;
+   }
+
+   .site-hero__title{
+      font-size: 40px;
+      line-height: 49px;
+      letter-spacing: 6.25px;
+   }
+}
