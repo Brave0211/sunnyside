@@ -52,6 +52,12 @@
    color: $color-blue-black;
    background-color: $color-white;
    text-decoration: none;
+   text-transform: uppercase;
+   font-family: $font-stack;
+   font-weight: 700;
+   font-size: 15px;
+   line-height: 25px;
+   letter-spacing: -0.107143px;
    border-radius: 28px;
    &:hover{
       color: $color-white;
