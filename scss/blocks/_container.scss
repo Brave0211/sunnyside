@@ -1,9 +1,18 @@
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1150px;
+  max-width: 1152px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.big-container{
+  width: 100%;
+  max-width: 1440px;
+  padding-left: 0px;
+  padding-right: 0px;
   margin-left: auto;
   margin-right: auto;
 }
